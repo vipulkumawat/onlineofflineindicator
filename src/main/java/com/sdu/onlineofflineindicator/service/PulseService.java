@@ -55,7 +55,7 @@ public class PulseService {
     }
 
     public List<Pulse> setPulseForUsers(List<Integer> userIds) {
-        List pulses = new ArrayList();
+        List<Pulse> pulses = new ArrayList<>();
         for (Integer userId : userIds) {
             Pulse existingUser = pulseRepository.findById(userId).orElse(null);
 
